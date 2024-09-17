@@ -1,0 +1,94 @@
+.contenedor 
+{
+    background-color: aqua;
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+    display: grid;
+    grid-gap: 10px;
+
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 12fr 5fr;
+    grid-template-areas: 
+        "header header header"
+        "side1 contenido side2"
+        "footer footer footer";
+}
+.contenedor>div
+{
+    background-color: aquamarine;
+}
+.contenedor .header 
+{
+    background-color: rgb(78, 209, 198);
+    grid-column: header;
+    /*grid-colum-star: header
+    grid-colum*end: header*/
+}
+.contenedor .contenido 
+{
+    background-color: beige;
+    grid-column: contenido;
+    font-size: 25px;
+    text-align: center;
+    display: grid;
+    grid-gap: 10px;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:    
+        "conteidoa contenidob contenidoc";
+}
+.contenedor .contenido .contenidoa
+{
+    background-color: rgb(249, 237, 168);
+    grid-column: contenidoa;
+    margin: 10px;
+}
+.contenedor .contenido .contenidob
+{
+    background-color: rgb(109, 101, 56);
+    grid-column: contenidob;
+    margin: 10px;
+}
+.contenedor .contenido .contenidoc
+{
+    background-color: rgb(249, 237, 168);
+    grid-column: contenidoc;
+    margin: 10px;
+}
+.contenedor .side1
+{
+    background-color: darksalmon;
+    grid-column: side1;
+    font-size: 25px;
+    text-align: center;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "side1a"
+        "side1b";
+}
+.contenedor .side1 .side1a
+{
+    background-color: rgb(248, 187, 166);
+    grid-column: side1a;
+    margin: 10px;
+}
+.contenedor .side1 .side1b
+{
+    background-color: rgb(248, 187, 166);
+    grid-column: side1b;
+    margin: 10px;
+}
+.contenedor .side2
+{
+    background-color: darksalmon;
+    grid-column: side2;
+}
+
+.contenedor .footer
+{
+    background-color: rgb(204, 166, 154);
+    grid-column: footer;
+}

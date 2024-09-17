@@ -40,19 +40,19 @@
 }
 .contenedor .contenido .contenidoa
 {
-    background-color: rgb(249, 237, 168);
+    background-color: beige;
     grid-column: contenidoa;
     margin: 10px;
 }
 .contenedor .contenido .contenidob
 {
-    background-color: rgb(109, 101, 56);
+    background-color: beige;
     grid-column: contenidob;
     margin: 10px;
 }
 .contenedor .contenido .contenidoc
 {
-    background-color: rgb(249, 237, 168);
+    background-color: beige;
     grid-column: contenidoc;
     margin: 10px;
 }
